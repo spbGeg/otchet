@@ -22,11 +22,12 @@
 <body>
 
 <div class="main container">
-    <div class="gitLink"><img src="img/github-logo.png" alt=""><a href="https://github.com/spbGeg/otchet.git">Ссылка на репозиторий</a></div>
+    <div class="gitLink"><img src="img/github-logo.png" alt=""><a href="https://github.com/spbGeg/otchet.git" target="_blank">Ссылка на репозиторий</a></div>
+    <div class="gitLink"><img src="img/winrar.png" alt=""><a href="otchet.rar" target="_blank">Ссылка на архив</a></div>
     <h1 class="text-center">Форма учета рабочего времени</h1>
     <div class="row">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
+
+        <div class="col-lg-12">
 
 
             <table class="otchet">
@@ -89,7 +90,7 @@
 
             </table>
         </div>
-        <div class="col-lg-2"></div>
+
         <?php require_once "admin/report.php" ?>
 
     </div>

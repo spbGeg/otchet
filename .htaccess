@@ -1,0 +1,35 @@
+Options -Indexes 
+ErrorDocument 404 /404.php
+php_value allow_url_include off
+php_value allow_url_fopen off
+
+
+
+<IfModule mod_dir.c>
+  DirectoryIndex index.php index.html
+</IfModule>
+
+php_value mbstring.func_overload 2
+php_value mbstring.internal_encoding UTF-8
+# SpaceWeb bitrix optimization BEGIN
+<IfModule mod_php7.c>
+  php_value mbstring.internal_encoding UTF-8
+  php_value mbstring.func_overload 2
+  php_value opcache.revalidate_freq 0
+  php_value max_input_vars 10000
+  php_value max_execution_time 300
+  php_value pcre.recursion_limit 1000
+  #php_value memory_limit 512M
+</IfModule>
+
+
+ #Защищаем .gitignore файл
+<files .htaccess=".gitignore">
+order allow,deny
+deny from all
+</files>
+ 
+ 
+ 
+
+
