@@ -1,0 +1,60 @@
+body {
+    background-color: #ccc;
+}
+
+.main {
+    background-color: #fff;
+    min-width: 600px;
+    min-height: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    padding-top: 20px;
+    display: block;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+.otchet{
+    border-collapse: collapse;
+width:100%;
+}
+.otchet td, th{
+    border: 1px solid #000;
+    text-align: center;
+    padding: 2px 10px;
+}
+.gitLink{
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.gitLink img {
+    width: 50px;
+}
+/* ------POPUP ------*/
+.poster{
+    position:relative;
+    margin:100px auto;
+    background:#ff6600;
+    height:200px;
+    width:150px;
+}
+.descr{
+    display:none;
+    margin-left:-350px;
+    padding:10px;
+    margin-top:17px;
+    background:#f3f3f3;
+    height:200px;
+    -moz-box-shadow:0 5px 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow:0 5px 5px rgba(0,0,0,0.3);
+    box-shadow:0 5px 5px rgba(0,0,0,0.3);
+}
+.poster:hover .descr{
+    display:block;
+    position:absolute;
+    top:120px;
+    z-index:9999;
+    width:400px;
+}
