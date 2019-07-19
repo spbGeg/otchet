@@ -22,17 +22,13 @@
 <body>
 
 <div class="main container">
-    <div class="gitLink"><img src="img/github-logo.png" alt=""><a href="#">Ссылка на репозиторий</a></div>
+    <div class="gitLink"><img src="img/github-logo.png" alt=""><a href="https://github.com/spbGeg/otchet.git">Ссылка на репозиторий</a></div>
     <h1 class="text-center">Форма учета рабочего времени</h1>
     <div class="row">
         <div class="col-lg-2"></div>
         <div class="col-lg-8">
-            <div class="poster">
-                <div class="descr">
-                    Какой-то текст который должен быть в блоке<br>
-                    <a href="#">Интересная ссылка</a>
-                </div>
-            </div>
+
+
             <table class="otchet">
                 <tr>
                     <th style="width: 10%">№п/п</th>
@@ -95,19 +91,12 @@
         </div>
         <div class="col-lg-2"></div>
         <?php require_once "admin/report.php" ?>
-        <?php
-
-        echo $sec;
-        echo "<br/>";
-
-        print_r($arr_timesheet);
-
-        ?>
 
     </div>
 
 
 </div>
 <?php mysqli_close($link) ?>
+
 </body>
 </html>

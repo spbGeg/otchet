@@ -33,28 +33,21 @@ width:100%;
     width: 50px;
 }
 /* ------POPUP ------*/
-.poster{
-    position:relative;
-    margin:100px auto;
-    background:#ff6600;
-    height:200px;
-    width:150px;
+img {
+    max-width: 100px;
 }
-.descr{
-    display:none;
-    margin-left:-350px;
-    padding:10px;
-    margin-top:17px;
-    background:#f3f3f3;
-    height:200px;
-    -moz-box-shadow:0 5px 5px rgba(0,0,0,0.3);
-    -webkit-box-shadow:0 5px 5px rgba(0,0,0,0.3);
-    box-shadow:0 5px 5px rgba(0,0,0,0.3);
-}
-.poster:hover .descr{
-    display:block;
-    position:absolute;
-    top:120px;
-    z-index:9999;
-    width:400px;
+span.tip {
+    /* Required */
+    position: absolute; //позиция
+z-index: 100; //номер слоя по оси z
+display: none;
+
+    /* Optional */
+    font-size: 15px; //размер шрифта
+max-width: 150px; //максимальная ширина всплывающей подсказки
+height: auto; //высота подсказки
+padding: 10px; //внутренний отступ
+border-radius: 3px; //закругление краёв
+box-shadow: 0 1px 2px #666; //тень блока
+background: #FD0; //цвет заднего фона
 }
